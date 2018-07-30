@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cancel_Ticket</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+            <div style="background-color: teal; color: white; font-size: 22px;border:5px solid black;font-family: monospace" align="center">
+            <h1>Welcome To Hospital Management System</h1></div>
+            <div></div><br><br><br><br>
+            <h1 style="font-size: 20px;font-family: monospace;" align="center">Please specify Patient ID and specific Date of Appointment for Cancelation</h1>
+               <form action="Search_Patient_To_Cancel.jsp" method="get">
+                <table align="center" style="font-size: 28px;font-family: monospace;" cellspacing="5" cellpadding="20">
+                    <tr><td>Enter ID</td><td><input type="number" placeholder="Enter Doctor's ID" name="id" required></td></tr>
+                    <tr><td>Enter Date</td><td><input type="date"  id="txtDate" required="Required" class="form-control" name="txtDate" placeholder="Select suitable date" style="color: maroon; font-family: monospace; font-size: 18px"/></td></tr>
+                    <tr><td colspan="2" align="center"><input type="submit" value="Search" style="font-size: 23px;" required ></td></tr>
+                </table>
+                    </form>
+            <form><div align="right"><button formaction="User_Select.html" style="font-size: 20px;">Home</button></div></form>
+    </body>
+</html>

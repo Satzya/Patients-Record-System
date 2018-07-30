@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Welcome To H.M.S</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style="background-color: teal; color: white; font-size: 22px;border:5px solid black;font-family: monospace" align="center">
+            <h1>Welcome To Hospital Management System</h1></div>
+        <div></div><br><br>
+        <h1 style="font-size: 30px;font-family: monospace;" align="center">Select the required option</h1>
+        <form action="Users.jsp" method="get">
+        <table style="border:0px solid black;font-size: 20px;font-family: monospace;" align="center" cellpadding="15" cellspacing="10">
+            <tr>
+                <td><h1>User</h1></td>
+                <td><select style="font-size: 27px;font-family: monospace;" name="v1">
+                    <option value="Admin" >Admin Login</option>
+                    <option value="Doctor">Doctor Access</option>
+                    <option value="Patient">Book Appointment</option>
+                    <option value="Cancel Appointment">Cancel Appointment</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Proceed" style="font-size: 30px;font-family: monospace;">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>

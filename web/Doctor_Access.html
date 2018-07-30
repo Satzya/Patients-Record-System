@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doctor_Access</title>
+        <script type="text/javascript">
+            function currentDate(){
+            var today = new Date().toISOString().split('T')[0];
+                document.getElementsByName("txtDate")[0].setAttribute('min', today);
+                }
+        </script>
+    </head>
+    <body>
+<div style="background-color: teal; color: white; font-size: 22px;border:5px solid black;font-family: monospace" align="center">
+<h1>Welcome To Hospital Management System</h1></div>
+<div></div><br><br><br><br><br>
+<form action="Patients_List.jsp" method="get">
+                <table align="center" style="font-size: 30px;font-family: monospace;" cellspacing="15" cellpadding="5">
+                    <tr><td colspan="2" align="center"><h1 style="font-size: 40px">View Patient's List</h1></tr>
+                    <tr><td>Enter Your Id</td><td><input type="number" name="id" required></td></tr>
+                 <tr><td>Select Date</td><td colspan="3" align="center">
+            <input type="date"  id="txtDate" required="Required" class="form-control" name="txtDate" placeholder="Select suitable date"  onclick="currentDate()"
+                   style="color: maroon; font-family: monospace; font-size: 18px"/>
+                </td></tr>   
+                 <tr><td colspan="2" align="center"><input type="submit" value="Search" style="font-size: 25px;"></td></tr>
+    </table>
+    </form>
+<form><div align="right"><button formaction="User_Select.html" style="font-size: 20px;">Home</button></div></form>
+    </body>
+    
+</html>
